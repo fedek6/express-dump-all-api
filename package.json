@@ -1,0 +1,34 @@
+{
+  "name": "express-dump-all-api",
+  "version": "1.0.0",
+  "description": "Dummy API to dump any incoming request",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --exit-child src/index.ts",
+    "test": "tsc --project ./tsconfig.json --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedek6/express-dump-all-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedek6/express-dump-all-api/issues"
+  },
+  "homepage": "https://github.com/fedek6/express-dump-all-api#readme",
+  "dependencies": {
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/multipart": "^7.4.0",
+    "console-log-colors": "^0.3.5",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.12.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}
