@@ -15,7 +15,9 @@ export function createCounter() {
 }
 
 export const fileLog = (text: string) =>
-  fs.writeFileSync(createLogFileName(), text + "\n", { flag: "a" });
+  fs.writeFileSync(createLogFileName(), `Time: ${Date.now()}\n${text}` + "\n", {
+    flag: "a",
+  });
 
 function createLogFileName(): string {
   const currentDate = new Date();
